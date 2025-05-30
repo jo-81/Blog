@@ -1,0 +1,125 @@
+# Types d'issues
+- name: "🐛 bug"
+  color: "d73a4a"
+  description: "Quelque chose ne fonctionne pas correctement"
+
+- name: "✨ feature"
+  color: "a2eeef"
+  description: "Nouvelle fonctionnalité ou amélioration"
+
+- name: "📚 documentation"
+  color: "0075ca"
+  description: "Améliorations de la documentation"
+
+- name: "🔧 maintenance"
+  color: "fbca04"
+  description: "Maintenance du code, refactoring"
+
+- name: "🔒 security"
+  color: "ee0701"
+  description: "Problème de sécurité"
+
+- name: "⚡ performance"
+  color: "ff9500"
+  description: "Amélioration des performances"
+
+- name: "🎨 ui/ux"
+  color: "e99695"
+  description: "Interface utilisateur et expérience"
+
+# Priorités
+- name: "🔥 critique"
+  color: "b60205"
+  description: "À corriger immédiatement"
+
+- name: "⚠️ haute"
+  color: "d93f0b"
+  description: "Priorité élevée"
+
+- name: "📈 moyenne"
+  color: "fbca04"
+  description: "Priorité normale"
+
+- name: "📉 basse"
+  color: "0e8a16"
+  description: "Peut attendre"
+
+# Statuts
+- name: "🔍 en investigation"
+  color: "fef2c0"
+  description: "En cours d'analyse"
+
+- name: "✅ prêt"
+  color: "0e8a16"
+  description: "Prêt à être développé"
+
+- name: "🚧 en cours"
+  color: "fbca04"
+  description: "Développement en cours"
+
+- name: "⏸️ en attente"
+  color: "d4c5f9"
+  description: "En attente de retour/décision"
+
+- name: "✔️ terminé"
+  color: "0e8a16"
+  description: "Complété"
+
+- name: "❌ fermé"
+  color: "6f42c1"
+  description: "Fermé sans résolution"
+
+# Contributeurs
+- name: "👋 good first issue"
+  color: "7057ff"
+  description: "Bon pour les nouveaux contributeurs"
+
+- name: "🆘 help wanted"
+  color: "008672"
+  description: "Aide externe souhaitée"
+
+- name: "👀 needs review"
+  color: "0052cc"
+  description: "Besoin de relecture"
+
+- name: "🧠 discussion"
+  color: "d4c5f9"
+  description: "Nécessite une discussion"
+
+# Technique
+- name: "🖥️ frontend"
+  color: "1d76db"
+  description: "Côté client/interface"
+
+- name: "⚙️ backend"
+  color: "0e8a16"
+  description: "Côté serveur/API"
+
+- name: "📱 mobile"
+  color: "f9d0c4"
+  description: "Application mobile"
+
+- name: "🗄️ database"
+  color: "5319e7"
+  description: "Base de données"
+
+- name: "🔌 api"
+  color: "0052cc"
+  description: "Interface de programmation"
+
+- name: "🧪 tests"
+  color: "bfdadc"
+  description: "Tests et qualité"
+
+# Environnements
+- name: "🏠 local"
+  color: "c2e0c6"
+  description: "Environnement de développement"
+
+- name: "🧪 staging"
+  color: "fef2c0"
+  description: "Environnement de test"
+
+- name: "🚀 production"
+  color: "d73a4a"
+  description: "Environnement de production"
