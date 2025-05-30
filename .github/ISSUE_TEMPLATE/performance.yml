@@ -1,0 +1,52 @@
+# .github/ISSUE_TEMPLATE/performance.yml
+name: ⚡ Performance
+description: Amélioration des performances
+title: "[PERF] "
+labels: ["performance", "enhancement"]
+body:
+  - type: textarea
+    id: performance_issue
+    attributes:
+      label: Problème de performance
+      description: Quel aspect est lent ou pourrait être optimisé ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_metrics
+    attributes:
+      label: Métriques actuelles
+      description: Temps d'exécution, consommation mémoire, etc.
+      placeholder: |
+        - Temps de réponse: X ms
+        - Utilisation mémoire: X MB
+        - Requêtes DB: X queries
+
+  - type: textarea
+    id: target_metrics
+    attributes:
+      label: Objectifs de performance
+      description: Quelles améliorations visez-vous ?
+      placeholder: |
+        - Réduire le temps de réponse de X%
+        - Diminuer l'utilisation mémoire
+        - Optimiser les requêtes DB
+
+  - type: textarea
+    id: proposed_optimization
+    attributes:
+      label: Optimisation proposée
+      description: Quelle approche suggérez-vous ?
+
+  - type: checkboxes
+    id: optimization_area
+    attributes:
+      label: Domaine d'optimisation
+      options:
+        - label: Base de données / Requêtes
+        - label: Cache
+        - label: Algorithmes
+        - label: I/O (fichiers, réseau)
+        - label: Mémoire
+        - label: Frontend (CSS/JS)
+        - label: Configuration serveur

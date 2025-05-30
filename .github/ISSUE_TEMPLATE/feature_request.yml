@@ -1,0 +1,58 @@
+# .github/ISSUE_TEMPLATE/feature_request.yml
+name: ✨ Demande de fonctionnalité
+description: Proposer une nouvelle fonctionnalité pour le framework
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+body:
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problème à résoudre
+      description: Quel problème cette fonctionnalité résoudrait-elle ?
+      placeholder: Il est frustrant que... / Il serait utile de pouvoir...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Solution proposée
+      description: Comment imaginez-vous cette fonctionnalité ?
+      placeholder: Décrivez votre idée de solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considérées
+      description: Avez-vous pensé à d'autres solutions ? Pourquoi ne conviennent-elles pas ?
+
+  - type: checkboxes
+    id: feature_type
+    attributes:
+      label: Type de fonctionnalité
+      options:
+        - label: Nouveau composant du framework
+        - label: Amélioration d'un composant existant
+        - label: Fonctionnalité pour l'application blog
+        - label: Outil de développement
+        - label: Performance/Optimisation
+        - label: Sécurité
+
+  - type: dropdown
+    id: priority_request
+    attributes:
+      label: Priorité souhaitée
+      options:
+        - Haute (nécessaire pour le projet)
+        - Moyenne (améliorerait significativement)
+        - Basse (nice to have)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Contexte supplémentaire
+      description: Captures d'écran, exemples de code, références, etc.

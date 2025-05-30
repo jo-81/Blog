@@ -1,0 +1,82 @@
+# .github/ISSUE_TEMPLATE/core_component.yml
+name: 🏗️ Composant Core du Framework
+description: Template pour les composants essentiels du framework
+title: "[CORE] "
+labels: ["core", "enhancement"]
+assignees:
+  - jo_81
+body:
+  - type: input
+    id: component_name
+    attributes:
+      label: Nom du composant
+      description: Quel composant du framework voulez-vous implémenter ?
+      placeholder: ex. Container, Router, Request/Response
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décrivez le composant et son rôle dans le framework
+      placeholder: Ce composant est responsable de...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tâches à réaliser
+      description: Liste détaillée des tâches (utilisez des checkboxes)
+      placeholder: |
+        - [ ] Créer l'interface principale
+        - [ ] Implémenter la classe concrète
+        - [ ] Ajouter les exceptions spécifiques
+        - [ ] Écrire les tests unitaires
+        - [ ] Documenter l'API publique
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Critères d'acceptation
+      description: Comment savoir que ce composant est terminé ?
+      placeholder: |
+        - API publique complète et documentée
+        - Tests unitaires avec couverture > 90%
+        - Intégration avec les autres composants
+        - Performance acceptable
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité
+      description: Quelle est la priorité de ce composant ?
+      options:
+        - Critique (bloquant pour autres composants)
+        - Haute (nécessaire pour MVP)
+        - Moyenne (amélioration)
+        - Basse (nice to have)
+    validations:
+      required: true
+
+  - type: input
+    id: dependencies
+    attributes:
+      label: Dépendances
+      description: Quels autres composants sont nécessaires avant celui-ci ?
+      placeholder: ex. Container, Http\Request
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Notes techniques
+      description: Détails d'implémentation, choix techniques, références
+      placeholder: |
+        - Implémenter selon PSR-11 pour le Container
+        - Utiliser le pattern Factory pour...
+        - Référence : https://www.php-fig.org/psr/psr-11/

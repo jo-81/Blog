@@ -1,0 +1,83 @@
+# .github/ISSUE_TEMPLATE/blog_feature.yml
+name: 📝 Fonctionnalité Blog
+description: Template pour les fonctionnalités de l'application blog
+title: "[BLOG] "
+labels: ["blog", "feature"]
+assignees:
+  - jo_81
+body:
+  - type: input
+    id: feature_name
+    attributes:
+      label: Nom de la fonctionnalité
+      description: Quelle fonctionnalité blog voulez-vous ajouter ?
+      placeholder: ex. Système de commentaires, Recherche d'articles
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Décrivez la fonctionnalité du point de vue utilisateur
+      placeholder: |
+        En tant que [type d'utilisateur]
+        Je veux [action/fonctionnalité]
+        Afin de [bénéfice/objectif]
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tâches de développement
+      description: Liste des tâches techniques à réaliser
+      placeholder: |
+        - [ ] Créer les modèles/entités nécessaires
+        - [ ] Implémenter les contrôleurs
+        - [ ] Créer les templates/vues
+        - [ ] Ajouter les routes
+        - [ ] Écrire les tests
+        - [ ] Mettre à jour la documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Critères d'acceptation
+      description: Comment tester que la fonctionnalité fonctionne ?
+      placeholder: |
+        - L'utilisateur peut [action spécifique]
+        - Les données sont validées correctement
+        - L'interface est intuitive
+        - La fonctionnalité est responsive
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: components_affected
+    attributes:
+      label: Composants affectés
+      description: Quels parties du système seront modifiées ?
+      options:
+        - label: Modèles/Entités
+        - label: Contrôleurs
+        - label: Templates/Vues
+        - label: Routes
+        - label: Base de données (migrations)
+        - label: Assets (CSS/JS)
+        - label: Configuration
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexité estimée
+      description: Estimation de la difficulté
+      options:
+        - Simple (1-2 jours)
+        - Moyenne (3-5 jours)
+        - Complexe (1-2 semaines)
+        - Très complexe (2+ semaines)
+    validations:
+      required: true

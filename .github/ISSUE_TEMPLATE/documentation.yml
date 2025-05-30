@@ -1,0 +1,48 @@
+# .github/ISSUE_TEMPLATE/documentation.yml
+name: 📚 Documentation
+description: Amélioration ou création de documentation
+title: "[DOC] "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Type de documentation
+      options:
+        - Guide utilisateur
+        - Documentation technique/API
+        - Tutoriel
+        - README
+        - Exemples de code
+        - Architecture/Design
+    validations:
+      required: true
+
+  - type: textarea
+    id: doc_description
+    attributes:
+      label: Description
+      description: Quelle documentation voulez-vous créer/améliorer ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_audience
+    attributes:
+      label: Public cible
+      description: Pour qui est destinée cette documentation ?
+      placeholder: ex. Développeurs débutants, contributeurs, utilisateurs finaux
+    validations:
+      required: true
+
+  - type: textarea
+    id: content_outline
+    attributes:
+      label: Plan du contenu
+      description: Structure/plan de la documentation à créer
+      placeholder: |
+        1. Introduction
+        2. Installation
+        3. Configuration
+        4. Exemples
+        5. API Reference

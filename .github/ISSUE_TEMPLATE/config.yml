@@ -1,0 +1,9 @@
+# .github/ISSUE_TEMPLATE/config.yml
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussion générale
+    url: https://github.com/jo_81/Blog/discussions
+    about: Pour les questions générales et discussions sur le framework
+  - name: 📚 Documentation
+    url: https://github.com/jo_81/Blog/wiki
+    about: Consultez la documentation du framework
