@@ -95,10 +95,6 @@
   color: "0e8a16"
   description: "Côté serveur/API"
 
-- name: "📱 mobile"
-  color: "f9d0c4"
-  description: "Application mobile"
-
 - name: "🗄️ database"
   color: "5319e7"
   description: "Base de données"
