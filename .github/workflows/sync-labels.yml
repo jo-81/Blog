@@ -6,6 +6,11 @@ on:
     paths: ['.github/labels.yml']
   workflow_dispatch: # Permet de lancer manuellement
 
+permissions:
+  issues: write          # ✅ Permission pour gérer les labels
+  contents: read         # ✅ Permission pour lire le repo
+  pull-requests: write   # ✅ Permission pour les PR
+
 jobs:
   sync-labels:
     runs-on: ubuntu-latest
