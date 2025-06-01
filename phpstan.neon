@@ -1,0 +1,36 @@
+# phpstan.neon
+parameters:
+    # Niveau d'analyse (0-9, 9 étant le plus strict)
+    level: 6
+    
+    # Dossiers à analyser
+    paths:
+        - src
+        - Framework
+        - tests
+    
+    # Dossiers/fichiers à ignorer
+    excludePaths:
+        - vendor
+        - */cache/*
+        - */tmp/*
+    
+    # Configuration de l'autoloader
+    bootstrapFiles:
+        - vendor/autoload.php
+    
+    # Exceptions à ignorer pour certains patterns
+    ignoreErrors:
+        # Ignorer les erreurs sur les variables globales communes
+        - '#Variable \$_GET in isset\(\) always exists and is not nullable#'
+        - '#Variable \$_POST in isset\(\) always exists and is not nullable#'
+        - '#Variable \$_SERVER in isset\(\) always exists and is not nullable#'
+        
+        # Pour les méthodes magiques courantes
+        - '#Call to an undefined method .*::(get|set|has|call).*#'
+    
+    # Permettre les mixed types dans certains cas
+    treatPhpDocTypesAsCertain: true
+    
+    # Configuration pour les tests
+    reportUnmatchedIgnoredErrors: false
