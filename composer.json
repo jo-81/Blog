@@ -1,0 +1,26 @@
+{
+    "name": "app/blog",
+    "description": "Blog personnel développé en PHP.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jo-81",
+            "email": "geoffroy.colpart81@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Framework\\": "Framework/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    }
+}
