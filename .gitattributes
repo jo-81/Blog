@@ -1,0 +1,58 @@
+# .gitattributes
+
+# Configuration par défaut : Auto-détection pour tous les fichiers
+* text=auto
+
+# === FICHIERS TEXTE (LF sur tous les OS) ===
+*.php text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.sql text eol=lf
+
+# === FICHIERS DE CONFIGURATION ===
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+.php-cs-fixer.php text eol=lf
+phpstan.neon text eol=lf
+composer.json text eol=lf
+composer.lock text eol=lf
+
+# === FICHIERS SPÉCIFIQUES WINDOWS (CRLF) ===
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# === FICHIERS SPÉCIFIQUES UNIX (LF) ===
+*.sh text eol=lf
+
+# === FICHIERS BINAIRES (pas de conversion) ===
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.exe binary
+*.dll binary
+*.so binary
+
+# === FONTS ===
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# === AUTRES ===
+*.lock text eol=lf
