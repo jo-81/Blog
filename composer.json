@@ -25,7 +25,8 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.75",
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.1"
     },
     "scripts": {
         "phpstan": "phpstan analyse --ansi",
@@ -35,6 +36,7 @@
         "cs-fix-dry": "php-cs-fixer fix --dry-run --diff --ansi",
         "cs-check": "php-cs-fixer fix --dry-run --diff --ansi",
         "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
         "quality": [
             "@cs-check",
             "@phpstan",
