@@ -6,7 +6,7 @@ namespace Framework\Http;
 
 use Framework\Exception\NotFoundException;
 use Framework\Http\Contract\RequestInterface;
-use Framework\Http\Exception\InvalidRequestException;
+use Framework\Http\Exception\InvalidHttpException;
 
 /**
  * Factory permettant de créer dynamiquement une instance d'une classe implémentant RequestInterface.
@@ -19,7 +19,7 @@ class RequestFactory
      * @param string $className le nom complet de la classe à instancier
      *
      * @throws NotFoundException si la classe n'existe pas
-     * @throws InvalidRequestException si la classe n'implémente pas RequestInterface
+     * @throws InvalidHttpException si la classe n'implémente pas RequestInterface
      *
      * @return RequestInterface L'instance de la classe demandée
      */
@@ -32,7 +32,7 @@ class RequestFactory
         $request = new $className();
 
         if (!$request instanceof RequestInterface) {
-            throw InvalidRequestException::forMissingInterface($className, RequestInterface::class);
+            throw InvalidHttpException::forMissingInterface($className, RequestInterface::class);
         }
 
         return $request;

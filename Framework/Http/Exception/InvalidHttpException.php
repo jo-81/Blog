@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Framework\Http\Exception;
 
-class InvalidRequestException extends \RuntimeException
+class InvalidHttpException extends \RuntimeException
 {
     public static function forMissingInterface(string $className, string $interface): self
     {
