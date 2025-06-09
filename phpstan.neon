@@ -28,6 +28,8 @@ parameters:
         
         # Pour les méthodes magiques courantes
         - '#Call to an undefined method .*::(get|set|has|call).*#'
+
+        - identifier: missingType.iterableValue
     
     # Permettre les mixed types dans certains cas
     treatPhpDocTypesAsCertain: true
