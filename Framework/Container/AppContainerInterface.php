@@ -78,11 +78,9 @@ interface AppContainerInterface extends PsrContainerInterface
      * @param string $directory Le dossier de configuration
      */
     public function configureWithDirectory(string $directory): void;
-    
+
     /**
-     * Vide les définitions
-     *
-     * @return void
+     * Vide les définitions.
      */
     public function clear(): void;
 }

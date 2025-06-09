@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Framework\Container;
 
-use Framework\Container\AppContainerInterface;
-use Framework\Container\ContainerFactory;
-use Framework\Container\Exception\ContainerException;
 use PHPUnit\Framework\TestCase;
+use Framework\Container\ContainerFactory;
+use Framework\Container\AppContainerInterface;
+use Framework\Container\Exception\ContainerException;
 
 /**
  * @internal

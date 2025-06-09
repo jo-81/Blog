@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace App\Test\Framework\Container\Adapter;
 
-use App\Tests\Framework\Container\Fixtures\Dep;
-use App\Tests\Framework\Container\Fixtures\FileLogger;
-use App\Tests\Framework\Container\Fixtures\LoggerInterface;
-use App\Tests\Framework\Container\Fixtures\WithDep;
-use App\Tests\Framework\Container\Fixtures\WithScalar;
+use PHPUnit\Framework\TestCase;
+use Framework\Container\ContainerFactory;
 use Framework\Container\Adapter\PhpDiAdapter;
 use Framework\Container\AppContainerInterface;
-use Framework\Container\ContainerFactory;
-use Framework\Container\Exception\ContainerArgumentException;
+use App\Tests\Framework\Container\Fixtures\Dep;
+use App\Tests\Framework\Container\Fixtures\WithDep;
 use Framework\Container\Exception\NotFoundException;
-use PHPUnit\Framework\TestCase;
+use App\Tests\Framework\Container\Fixtures\FileLogger;
+use App\Tests\Framework\Container\Fixtures\WithScalar;
+use App\Tests\Framework\Container\Fixtures\LoggerInterface;
+use Framework\Container\Exception\ContainerArgumentException;
 
 /**
  * @internal
