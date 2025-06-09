@@ -19,7 +19,7 @@
 
     <source ignoreIndirectDeprecations="true" restrictNotices="true" restrictWarnings="true">
         <include>
-            <directory>src</directory>
+            <directory>Framework</directory>
         </include>
     </source>
 
@@ -29,12 +29,7 @@
     </php>
 
     <!-- Configuration de la couverture de code -->
-    <coverage includeUncoveredFiles="true"
-            processUncoveredFiles="true"
-            ignoreDeprecatedCode="true">
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
+    <coverage includeUncoveredFiles="true">
         <report>
             <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="75"/>
         </report>
