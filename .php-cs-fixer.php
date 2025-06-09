@@ -57,7 +57,7 @@ return $config
         
         // === IMPORTS ET NAMESPACES ===
         'ordered_imports' => [
-            'sort_algorithm' => 'alpha',
+            'sort_algorithm' => 'length',
             'imports_order' => ['class', 'function', 'const']
         ],
         'no_unused_imports' => true,

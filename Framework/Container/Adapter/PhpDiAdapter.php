@@ -6,10 +6,10 @@ namespace Framework\Container\Adapter;
 
 use DI\Container;
 use DI\ContainerBuilder;
-use DI\NotFoundException as DINotFoundException;
 use Framework\Container\AppContainerInterface;
-use Framework\Container\Exception\ContainerArgumentException;
+use DI\NotFoundException as DINotFoundException;
 use Framework\Container\Exception\NotFoundException;
+use Framework\Container\Exception\ContainerArgumentException;
 
 class PhpDiAdapter implements AppContainerInterface
 {
